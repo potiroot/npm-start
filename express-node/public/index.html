@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+</head>
+
+<body>
+  <h1>Главная страница</h1>
+  <!-- <i>Привет, express</i> -->
+  <form name="registerForm">
+    <p>Name</p>
+    <input type="text" name="username">
+    <p>Age</p>
+    <input type="number" name="userage">
+    <p><input type="submit" value="Send" id="submit"></p>
+  </form>
+
+  <script>
+    document.getElementById('submit').addEventListener('click', (e) => {
+      e.preventDefault();
+      let registerForm = document.forms['registerForm'];
+      let username = registerForm.elements['username'].value;
+      let userage = registerForm.elements['userage'].value;
+      let user = JSON.stringify({
+        username: username,
+        userage: userage,
+      });
+      let request = new XMLHttpRequest()
+      request.open('POST', '/user', true)
+      request.setRequestHeader(
+        'Content-Type',
+        'application/json'
+      )
+      request.addEventListener('load', () => {
+        let recievedUser = JSON.parse(request.response)
+        console.log(recievedUser.username, '-', recievedUser.userage);
+      })
+      request.send(user)
+    })
+  </script>
+</body>
+
+</html>
