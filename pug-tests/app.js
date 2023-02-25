@@ -6,7 +6,7 @@ app.set('view engine', 'pug');
 
 app.use('/contact', (req, res) => {
 	res.render('contact', {
-		title: 'Мои контакты',
+		title: 'My contacts',
 		emailsVisible: true,
 		emails: ['polka@gmail.com', 'polka@yandex.ru'],
 		phone: '+1234567890',
