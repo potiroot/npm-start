@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+* {
+  font-family: Inter;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.section-padding {
+  padding: 125px 0;
+}
+
+.diagramm-number {
+  font-size: 128px;
+  opacity: .5;
+  font-weight: bold;
+  position: absolute;
+}
