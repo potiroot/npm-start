@@ -29,3 +29,9 @@ block content
   section.products-content
     .container
       .row.row-cols-2.row-cols-md-3.row-cols-lg-4
+        each item in products
+          .col
+            include product-card.pug
+
+
+  hr
