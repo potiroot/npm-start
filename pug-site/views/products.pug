@@ -28,10 +28,34 @@ block content
 
   section.products-content
     .container
-      .row.row-cols-2.row-cols-md-3.row-cols-lg-4
+      .row.row-cols-2.row-cols-md-3.row-cols-lg-4.g-4
         each item in products
           .col
             include product-card.pug
 
-
-  hr
+  section.pegintation.section-padding
+    .container
+      .row
+        .col-12
+          nav(aria-label='Product-list-navigation')
+            ul.pagination.justify-content-center
+              li.page-item
+                a.page-link(href='#' aria-label='Previous')
+                  span(aria-hidden='true') «
+              li.page-item
+                a.page-link.active(href='#') 1
+              li.page-item
+                a.page-link(href='#') 2
+              li.page-item
+                a.page-link(href='#') 3
+              li.page-item
+                a.page-link(href='#') 4
+              li.page-item
+                a.page-link(href='#') 5
+              li.page-item
+                a.page-link(href='#') 6
+              li.page-item
+                a.page-link(href='#') 7
+              li.page-item
+                a.page-link(href='#' aria-label='Next')
+                  span(aria-hidden='true') »

@@ -38,3 +38,85 @@ footer a {
 .va-md {
   vertical-align: -webkit-baseline-middle;
 }
+
+.custom-card {
+  min-height: 320px;
+  height: 100%;
+  position: relative;
+  background: #292C3C;
+}
+
+.custom-card:hover .card-button {
+  visibility: visible;
+  opacity: 1;
+  transition: all .2s;
+}
+
+.custom-card:hover .card-body {
+  position: absolute;
+  transform: translateY(-40px);
+}
+
+.custom-card:hover {
+  min-height: calc(100% - 245px);
+}
+
+.card-body {
+  background: #292C3C;
+  height: calc(100% - 205px);
+  width: 100%;
+  transition: .2s;
+}
+
+.custom-card .card-body {
+  padding: 15px 20px;
+}
+
+.price,
+.rating {
+  position: relative;
+}
+
+.price::after,
+.rating::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -25px;
+  font-weight: 400;
+}
+
+.price::after {
+  content: "₽";
+}
+
+.rating::after {
+  content: url(../img/rating-star.svg);
+  right: -5px;
+}
+
+.custom-card .custom-btn {
+  background: #181D27;
+  text-transform: uppercase;
+  border: 3px solid #181D27;
+  border-radius: 3px;
+  width: 100%;
+  transition: .2s;
+}
+
+.card-button {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  background: #292C3C;
+  bottom: 15px;
+  left: 20px;
+  width: calc(100% - 40px);
+  transition: .2s;
+}
+
+
+.custom-card .custom-btn:hover {
+  background: none;
+  border: 3px solid #181D27;
+}

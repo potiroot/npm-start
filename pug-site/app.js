@@ -8,7 +8,7 @@ app.use(express.static('public'));
 
 let productsList = {};
 app.use('/products', (req, res) => {
-	fetch('https://dummyjson.com/products')
+	fetch('https://dummyjson.com/products?limit=20')
 		.then((res) => res.json())
 		.then((json) => {
 			productsList = json;

@@ -1,3 +1,13 @@
 block product-card
-  .product-card.card
-    img(src=item.images[1], alt="")
+  .product-card.custom-card
+    if item.images[1]
+      img.card-img-top(src=item.images[1], alt="" height="205")
+    else
+      img.card-img-top(src="img/logo.svg" alt="" height="205")
+    .card-body.d-flex.justify-content-between.flex-column.text-white
+      p.fs-6=item.title
+      .d-flex.align-items-center.justify-content-between.fw-bold
+        p.fs-4.mb-0.price=item.price
+        p.fs-5.mb-0.rating.pe-3=item.rating
+    .card-button
+      a.custom-btn.fw-bold.text-white(href='product/' + item.id) Купить
