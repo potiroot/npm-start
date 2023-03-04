@@ -18,3 +18,14 @@
   font-weight: bold;
   position: absolute;
 }
+
+.diagramm-row {
+  margin-bottom: 150px;
+}
+
+.diagramm-name {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
