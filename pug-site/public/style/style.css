@@ -33,3 +33,8 @@
 footer a {
   text-decoration: none;
 }
+
+.page-filter a,
+.va-md {
+  vertical-align: -webkit-baseline-middle;
+}

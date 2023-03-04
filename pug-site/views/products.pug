@@ -4,8 +4,28 @@ block content
 
   section.section-padding
     .container
-      .row.justify-content-center
-        .col-10
-          h2.text-center Сайт предоставляет услуги компании KARABEL. Мы производим приборы, стабилизаторы, наборы и другие вещи необходимые каждому судну.
-            <br/><br/>
-              | Наши клиенты выбирают нас, потому что:
+      .row.mb-4
+        .col-12.text-start
+          h1 Список товаров от KARABEL
+      .row.page-filter.bg-light-subtle.text-white.p-3
+        .col-12.col-lg-9
+          section.product-filters
+            .container
+              .row.mb-3.mb-lg-0
+                .col-4.col-lg-3
+                  a(href="#").text-decoration-none.text-white.fs-6 Сортировка:
+                    span.text-white-50  По цене >
+                .col-4.col-lg-3
+                  a(href="#").text-decoration-none.text-white.fs-6 Категория:
+                    span.text-white-50  Приборы
+                .col-4.col-lg-3
+                  a(href="#").text-decoration-none.text-white.fs-6.d-flex.align-items-center До цены:
+                    input(type="number" value="5000").form-control.bg-dark.w-50.ms-2
+        .col-12.col-lg-3.text-center.text-lg-end
+          p.va-md.mb-0 Найдено
+            span.fw-bold.mx-2 808
+            | Товаров
+
+  section.products-content
+    .container
+      .row.row-cols-2.row-cols-md-3.row-cols-lg-4
