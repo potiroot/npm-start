@@ -5,8 +5,8 @@ const app = express();
 app.set('view engine', 'pug');
 app.use(express.static('public'));
 
-app.use('/header', (req, res) => {
-	res.render('header');
+app.use('/products', (req, res) => {
+	res.render('products');
 });
 
 app.get('/', function (req, res) {

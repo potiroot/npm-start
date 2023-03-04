@@ -22,7 +22,7 @@ html(lang="ru")
               li.nav-item
                 a.nav-link.active(href='#') Главная
               li.nav-item
-                a.nav-link(href='#') Товары
+                a.nav-link(href='products') Товары
               li.nav-item
                 a.nav-link(href='#') Пользователи
               li.nav-item
@@ -33,71 +33,48 @@ html(lang="ru")
   block content
 
   block footer
-  .footer.bg-black
-    .container
-        section.d-flex.justify-content-between.p-4
-          .me-5.mt-5
-            img(src="img/logo.svg", alt="logo")
-          div
-            a.text-white.me-4(href='')
-              i.fab.fa-facebook-f
-            a.text-white.me-4(href='')
-              i.fab.fa-twitter
-            a.text-white.me-4(href='')
-              i.fab.fa-google
-            a.text-white.me-4(href='')
-              i.fab.fa-instagram
-            a.text-white.me-4(href='')
-              i.fab.fa-linkedin
-            a.text-white.me-4(href='')
-              i.fab.fa-github
-          section
-            .container.text-center.text-md-start.mt-5
-              .row.mt-3
-                .col-md-3.col-lg-4.col-xl-3.mx-auto.mb-4
-                  h6.text-uppercase.fw-bold Company name
-                  hr.mb-4.mt-0.d-inline-block.mx-auto(style='width: 60px; background-color: #7c4dff; height: 2px')
+    footer.footer.bg-black
+      .container
+        .row.py-5
+          .col-12.col-lg-4.text-center.text-lg-start.mb-4
+            img(src="img/logo.svg" alt="logo")
+          .col-12.col-lg-8
+            section.container
+              .row
+                .col-12.col-lg-4.text-center.text-lg-end.mb-3
                   p
-                    | Here you can use rows and columns to organize your footer
-                    | content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                    | elit.
-                .col-md-2.col-lg-2.col-xl-2.mx-auto.mb-4
-                  h6.text-uppercase.fw-bold Products
-                  hr.mb-4.mt-0.d-inline-block.mx-auto(style='width: 60px; background-color: #7c4dff; height: 2px')
+                    a(href="#").text-white Контакты
                   p
-                    a.text-white(href='#!') MDBootstrap
+                    a(href="#").text-white Отзывы
                   p
-                    a.text-white(href='#!') MDWordPress
+                    a(href="#").text-white Новости
                   p
-                    a.text-white(href='#!') BrandFlow
+                    a(href="#").text-white Начальник цеха
+                .col-12.col-lg-4.text-center.text-lg-end.mb-3
                   p
-                    a.text-white(href='#!') Bootstrap Angular
-                .col-md-3.col-lg-2.col-xl-2.mx-auto.mb-4
-                  h6.text-uppercase.fw-bold Useful links
-                  hr.mb-4.mt-0.d-inline-block.mx-auto(style='width: 60px; background-color: #7c4dff; height: 2px')
+                    a(href="#").text-white Контакты
                   p
-                    a.text-white(href='#!') Your Account
+                    a(href="#").text-white Отзывы
                   p
-                    a.text-white(href='#!') Become an Affiliate
+                    a(href="#").text-white Новости
                   p
-                    a.text-white(href='#!') Shipping Rates
+                    a(href="#").text-white Начальник цеха
+                .col-12.col-lg-4.text-center.text-lg-end.mb-3
                   p
-                    a.text-white(href='#!') Help
-                .col-md-4.col-lg-3.col-xl-3.mx-auto.mb-md-0.mb-4
-                  h6.text-uppercase.fw-bold Contact
-                  hr.mb-4.mt-0.d-inline-block.mx-auto(style='width: 60px; background-color: #7c4dff; height: 2px')
+                    a(href="#").text-white Контакты
                   p
-                    i.fas.fa-home.mr-3
-                    |  New York, NY 10012, US
+                    a(href="#").text-white Отзывы
                   p
-                    i.fas.fa-envelope.mr-3
-                    |  info@example.com
+                    a(href="#").text-white Новости
                   p
-                    i.fas.fa-phone.mr-3
-                    |  + 01 234 567 88
-                  p
-                    i.fas.fa-print.mr-3
-                    |  + 01 234 567 89
-                .text-center.p-3(style='background-color: rgba(0, 0, 0, 0.2)')
-                  | © 2020 Copyright:
-                  a.text-white(href='https://mdbootstrap.com/') MDBootstrap.com
+                    a(href="#").text-white Начальник цеха
+        .row
+          .col-3
+            p
+              | © KARABEL 2023. Made by Podolsky
+          .col-3.ms-auto
+            p.small.text-lg-end
+              a(href="#").text-white Правила чего-нибудь
+          .col-3
+            p.small.text-lg-end
+              a(href="#").text-white Политика конфиденциальности
